@@ -35,7 +35,7 @@ public abstract class TaskRunnable {
     }
 
     private void checkScheduled() {
-        if (task != null) {
+        if (task == null) {
             throw new IllegalStateException("This task is not scheduled");
         }
     }
